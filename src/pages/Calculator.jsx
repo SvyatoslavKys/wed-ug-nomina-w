@@ -39,7 +39,7 @@ export function Calculator(){
     };
     if(value === "ac"){
         clearDisplay()
-        
+
         return;
     };
     if(value === "="){
@@ -49,10 +49,10 @@ export function Calculator(){
     
     setDisplay((prev) => prev + value);
   };
-  console.log(display); 
-  console.log(firstOperand);    
-  console.log(operator);
-  console.log(waitingForSecondOperand);
+//   console.log(display); 
+//   console.log(firstOperand);    
+//   console.log(operator);
+//   console.log(waitingForSecondOperand);
 
     return(
         <div className="min-h-screen flex items-center justify-center flex-col">
