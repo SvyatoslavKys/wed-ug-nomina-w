@@ -1,8 +1,8 @@
 import { Routes, Route } from "react-router-dom";
-import { Layout } from "./layout";
+import { Layout } from "./Layout";
 import Home from "../pages/Home";
-import {Calculator} from "../pages/Calculator";
-import {Nominaly} from "../pages/Nominaly";
+import { Calculator } from "../pages/Calculator";
+import { Nominaly } from "../pages/Nominaly";
 
 export default function App() {
   return (
