@@ -16,7 +16,7 @@ export function Calculator(){
     setWaitingForSecondOperand(false);
   } 
   function calculate(operator, firstOperand, secondOperand){
-    if(operator === "+"){
+            if(operator === "+"){
         return firstOperand + secondOperand;
     } else if(operator === "-"){
         return firstOperand - secondOperand;
@@ -39,12 +39,11 @@ export function Calculator(){
     };
     if(value === "ac"){
         clearDisplay()
-
         return;
     };
     if(value === "="){
-         setDisplay(calculate(operator, firstOperand, display));
-
+         setDisplay(calculate(operator, Number(firstOperand), Number(display)));
+         return;
     };
     
     setDisplay((prev) => prev + value);
