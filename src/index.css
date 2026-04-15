@@ -1,1 +1,17 @@
 @import "tailwindcss";
+
+@layer base {
+  html {
+    background-color: #f8fafc;
+    color-scheme: light;
+  }
+
+  html.dark {
+    background-color: #0f172a;
+    color-scheme: dark;
+  }
+
+  body {
+    background-color: transparent;
+  }
+}
